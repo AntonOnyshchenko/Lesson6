@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args) {
+        EmployerFullTime employer = new EmployerFullTime();
+        employer.valueOfSalary();
+        EmployerofHours employerofhours = new EmployerofHours();
+        employerofhours.valueOfSalary();
+
+    }
+}
