@@ -1,0 +1,18 @@
+public class EmployerofHours implements SalaryOfEmployer {
+    int countofHours;
+    int valueofHour;
+
+    public  EmployerofHours() {
+        this.countofHours = 133;
+        this.valueofHour = 222;
+    }
+    @Override
+    public void valueOfSalary(){
+        if (countofHours == 0){
+            System.out.println(" You salary is 0.00");
+        }
+        else{
+            System.out.println("You salary is" + " "+(countofHours + valueofHour));
+        }
+    }
+}
