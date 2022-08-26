@@ -1,0 +1,20 @@
+public class EmployerFullTime implements SalaryOfEmployer {
+    short workingday;
+    int salaryofDay;
+
+    public EmployerFullTime() {
+        this.workingday = 10;
+        this.salaryofDay= 1000;
+    }
+    @Override
+   public void valueOfSalary() {
+        if (workingday == 0 || salaryofDay == 0) {
+            System.out.println(" You salary is 0.00");
+        } else if (workingday < 0 || salaryofDay < 0) {
+            System.out.println("It's incorrect");
+        } else {
+            System.out.println("You salary is "+(workingday*salaryofDay));
+        }
+    }
+
+}
