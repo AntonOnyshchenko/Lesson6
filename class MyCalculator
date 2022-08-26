@@ -1,0 +1,32 @@
+package com.lgs.lab.interface2;
+import com.lgs.lab.interface1.Numerable;
+public class MyCalculator  implements Numerable {
+    double operator_1;
+    double operator_2;
+    public  MyCalculator(){
+        this.operator_1=10.00;
+        this.operator_2 =5.00;
+    }
+    @Override
+    public double plus(){
+       return operator_1 *operator_2;
+    }
+    public double minus(){
+        return operator_1 - operator_2;
+    }
+    public double multiply(){
+        return operator_1 * operator_2;
+    }
+    public double devide(){
+        return operator_1/operator_2;
+    }
+
+    public static void main(String[] args) {
+        MyCalculator myCalculator = new MyCalculator();
+        System.out.println(myCalculator.plus());
+        System.out.println(myCalculator.minus());
+        System.out.println(myCalculator.multiply());
+        System.out.println(myCalculator.devide());
+    }
+
+}
